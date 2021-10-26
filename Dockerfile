@@ -7,5 +7,3 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN apt-get update && apt-get install python-pip -y && pip install awsebcli pyrsistent==0.16.0 botocore==1.19.63
 
 RUN apt-get -yqq update && apt-get -yqq install docker.io && usermod -g docker jhipster
-
-VOLUME /var/run/docker.sock
