@@ -2,6 +2,8 @@ FROM jhipster/jhipster:v7.0.1
 
 USER root
 
+RUN apt-get update && apt-get install unzip -y
+
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
 
 RUN apt-get update && apt-get install python-pip -y && pip install awsebcli==3.19.4 pyrsistent==0.16.0 botocore==1.19.63
