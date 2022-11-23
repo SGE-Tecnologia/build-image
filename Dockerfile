@@ -1,4 +1,4 @@
-FROM jhipster/jhipster:v7.2.0
+FROM jhipster/jhipster:v7.3.1
 
 USER root
 
